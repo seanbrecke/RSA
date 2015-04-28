@@ -28,7 +28,7 @@ def inverse(a, m):
         return x % m
         
 def largeprime(n):
-#n is the length of the prime
+#n specifies range of prime
     c = []
     for z in range(n,n*2):
         if len(c) == 2:
