@@ -39,6 +39,5 @@ def largeprime(n):
 def factors(l):
     n = int(l)
     for x in range(1,int(n**0.5+1)):
-        print(long(x/n*100))
         if n%x == 0 and n%(n/x)==0 and isprime(x) == True and isprime(n/x) == True:
             return [x, n/x]
