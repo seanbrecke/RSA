@@ -1,4 +1,4 @@
-import functions
+from functions import *
 
 largeprimelist = largeprime(random.randint(70000,100000))
 p = largeprimelist[0]*largeprimelist[1] #we do number**e mod p to encrypt
