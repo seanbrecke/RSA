@@ -8,13 +8,13 @@ def encrypt(rawtext, modulo):
 	l = list(rawtext)
 	n = []
 	for x in l:
-    	n.append(alphabet.index(x)+1)
+		n.append(alphabet.index(x)+1)
 
 	e = 65537
 	m = modulo
 	c = []
 
 	for x in n:
-	    c.append((x**e)%m)
+		c.append((x**e)%m)
 
 	return c
