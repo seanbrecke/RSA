@@ -1,8 +1,8 @@
 from functions import *
 
-def new_mod():
+def new_mod(upper):
 
-  largeprimelist = largeprime(random.randint(70000,100000))
+  largeprimelist = largeprime(random.randint(70000,upper))
   p = largeprimelist[0]*largeprimelist[1] #we do number**e mod p to encrypt
 #phip = (largeprimelist[0]-1)*(largeprimelist[1]-1)
 #e = 65537
