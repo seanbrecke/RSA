@@ -15,4 +15,6 @@ for x in n:
     l.append(alphabet[x])
 
 for x in l:
-    text += x
+    text += str(x)
+    
+print(text)
