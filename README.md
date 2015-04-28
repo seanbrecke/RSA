@@ -1,3 +1,1 @@
-# RSA
-project for math, RSA encrpytion
-key generation, encryption, decryption, brute force factorizing.
+A project I did for math. Includes RSA key generation, Encryption, Decryption and Brute force factorizing.
