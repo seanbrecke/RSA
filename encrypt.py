@@ -1,18 +1,20 @@
 #encrypts larger files quickly
 #for this example, the padding scheme is just the order in the alphabet, ' ' is 25.
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ']
 
-rawtext = str(raw_input("Enter Text")).lower()
-l = list(rawtext)
-n = []
-for x in l:
-    n.append(alphabet.index(x)+1)
 
-e = 65537
-m = int(raw_input("Modulus?"))
-c = []
+def encrypt(rawtext, modulo):
+	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ']
+	rawtext = rawtext.lower()
+	l = list(rawtext)
+	n = []
+	for x in l:
+		n.append(alphabet.index(x)+1)
 
-for x in n:
-    c.append((x**e)%m)
-    
-print(c)
+	e = 65537
+	m = modulo
+	c = []
+
+	for x in n:
+		c.append((x**e)%m)
+
+	return c
