@@ -1,5 +1,3 @@
-#for this example, the padding scheme is just the order in the alphabet, ' ' is 25.
-
 def decrypt(raw_input, decryption_key, modulus_key):
 
 	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ']
@@ -21,3 +19,8 @@ def decrypt(raw_input, decryption_key, modulus_key):
 	    text += str(x)
 	    
 	return text
+
+user_ciphertext_input = list(raw_input("\n Enter Ciphertext as List \n For example: [15, 41, 53] \n"))
+user_decryption_key_input = int(raw_input("\n What is the Decryption Key \n"))
+user_modulus_input = int(raw_input("\n What is the Modulus? \n"))
+print(decrypt(user_ciphertext_input, user_decryption_key_input, user_modulus_input))
