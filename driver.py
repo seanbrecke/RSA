@@ -9,7 +9,7 @@ if generated_modulus == "" or generated_modulus == " ":
   upperlimit = int(raw_input("\n Upper Limit for Modulus, Must be above 70,000 \n"))
   new_key = key_generation.new_mod(upperlimit)
   generated_modulus = new_key[0]
-  print("\n [Modulus, Encrpytion Key, Decryption Key]  \n")
+  print("\n [Modulus, Encryption Key, Decryption Key]  \n")
   print(new_key)
 else:
   user_encryption_key = int(raw_input("\n What is the encryption key? \n"))
