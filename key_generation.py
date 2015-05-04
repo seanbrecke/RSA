@@ -28,7 +28,7 @@ def inverse(a, m):
 #finds prime number between entered number n and 2n.
 def largeprime(n):
     c = []
-    for z in range(n,n*2): #We know there is a prime between n and 2n because of Carmicheal primality test.
+    for z in range(n,n*2): #We know there is a prime between n and 2n because of bertrand's postulate
         if len(c) == 2: #stops if it finds 2 primes
 		    return c
         elif isprime(z) == True:
