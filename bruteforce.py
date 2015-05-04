@@ -23,7 +23,7 @@ def factors(l):
 #The entire security of RSA relies on the fact that it is difficult to factor the product of 2 large primes. The modulus, which is public, if it is able to be factored into its 2 prime components, you can use the totient function, and then the modular inverse to find the decryption key. If we are able to factor the modulus, we know everything.
 
 #input, output, uses modulus and encryption key to brute force find decryption key.
-user_input_encrpytion_key = int(raw_input("\n What is the encrpytion key? \n"))	
+user_input_encrpytion_key = int(raw_input("\n What is the encryption key? \n"))	
 user_input_modulus = int(raw_input("\n What is the Modulus? \n"))
 print("\n [p, q] \n")
 print(factors(user_input_modulus))
