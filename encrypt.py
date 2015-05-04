@@ -15,7 +15,7 @@ def encrypt(rawtext, modulo, user_input_key):
 	ciphertext = []
 
 	for x in n:
-		ciphertext.append(str((x**e)%m)) #uses m^e mod n, to encrpyt.
+		ciphertext.append(str((x**e)%m)) #uses m^e mod n, to encrypt.
 	ciphertext = [ x[:-1] for x in ciphertext ] 
 	ciphertext = [ int(x) for x in ciphertext ] #fixes problems based on using python
 	return ciphertext
