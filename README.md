@@ -4,4 +4,6 @@ Encryption and Key generation done through `driver.py`, while decryption is done
 An unrelated file, called `bruteforce.py` will factorize a number to its 2 prime factors, if they exist.
 Paper I wrote on this topic [here](https://drive.google.com/file/d/0BzDRGkEPTyY_NlhiMUZKdlRWSFU/view?usp=sharing).
 
-This is written in python2.7.
+This is written in `python2.7`.
+
+This should manifestly not be used for any sort of cryptographic purposes, it was an exmaple of RSA encryption for a school project, that is essentially defunct.
